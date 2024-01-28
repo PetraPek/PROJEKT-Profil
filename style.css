@@ -1,6 +1,13 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+	box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+	box-sizing: inherit;
+}
 
 /*
 	BARVY
@@ -16,4 +23,100 @@ html { box-sizing: border-box; }
 
 body {
 	background-color: #bdc3c7;
+}
+
+.profil {
+	background-color: #31363b;
+	width: 300px;
+	margin-left: 20px;
+	margin-top: 20px;
+	position: relative;
+	box-shadow: black 4px 6px 20px;
+}
+
+.logo {
+	background-color: #b92e81;
+	border-radius: 50%;
+	position: absolute;
+	top: 25%;
+	left: 70%;
+}
+
+.foto {
+	max-width: 100%;
+}
+
+.obsah {
+	color: silver;
+	margin: 10%;
+	font-family: "Montserrat", sans-serif;
+}
+
+.jmeno {
+	color: white;
+}
+
+p {
+	font-size: 15px;
+}
+
+.odkazy {
+	text-decoration: none;
+
+}
+
+.portfolio {
+	display: block;
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: silver;
+	margin-top: 10px;
+	border-top: 1px solid #3f464d;
+	border-bottom: 1px solid #3f464d;
+}
+
+.portfolio:hover {
+	background-color: #e74c3c;
+}
+
+ul.odkazy {
+	text-decoration: none;
+	padding: 0;
+}
+
+.facebook {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: silver;
+}
+
+.facebook:hover {
+	background-color: #3b5998;
+}
+
+.twitter {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: silver;
+}
+
+li.facebook,
+li.twitter {
+	display: inline-block;
+	padding: 30px;
+}
+
+
+.twitter:hover {
+	background-color: #1da1f2;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: silver;
+	font-family: "Montserrat", sans-serif;
 }
